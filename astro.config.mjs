@@ -10,20 +10,8 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   // IMPORTANT: Change this to your deployed site URL
-// @ts-check
-import { defineConfig, envField, fontProviders } from "astro/config";
-
-import tailwindcss from "@tailwindcss/vite";
-import mdx from "@astrojs/mdx";
-import icon from "astro-icon";
-import expressiveCode from "astro-expressive-code";
-import sitemap from "@astrojs/sitemap";
-
-// https://astro.build/config
-export default defineConfig({
-  // IMPORTANT: Change this to your deployed site URL
   site: 'https://aroura-writes.github.io',
-  base: '/my-novel-link'
+  
   vite: {
     plugins: [tailwindcss()],
   },
